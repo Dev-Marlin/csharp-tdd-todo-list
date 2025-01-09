@@ -11,19 +11,31 @@
 
 ## Domain Model
 
-| Classes       | Methods/Properties                                 | Scenario                                       | Outputs                                                  |
-|---------------|----------------------------------------------------|------------------------------------------------|----------------------------------------------------------| 
-|ToDoList.cs    |AddTask(string task)                                |add task to todo list                           |                                                          |
-|ToDoList.cs    |PrintToDoList()                                     |shows the whole todo list                       |string showing whole todolist                             |
-|ToDoList.cs    |CompletedTasks()                                    |shows all the completed tasks                   |string showing all completed tasks                        |
-|ToDoList.cs    |UnCompletedTasks()                                  |shows all the uncompleted tasks                 |string showing all uncompleted tasks                      |
-|ToDoList.cs    |SearchForTask(string task)                          |looks for the searched task                     |returns the search task or a text with not found          |
-|ToDoList.cs    |SetAsCompleted(string task)                         |set task as completed                           |													         |
-|ToDoList.cs    |RemoveTask(string task)                             |task is not needed and can be removed           |bool that shows if it got removed or was not found		 |											         |
-|ToDoList.cs    |SortAscending()                                     |sorts the list in alphabetic ascending order    |                                                          |
-|ToDoList.cs    |SortDescending()                                    |sorts the list in alphabetic descending order   |                                                          |
-|ToDoList.cs    |SetAsCompleted(string task)                         |you are done with one of the tasks              |                                                          |
-|ToDoList.cs    |Size()                                              |want to know the size of the todo list          | int that represents the size of the todo list            |
+| Classes       | Methods/Properties                                 | Scenario                                       | Outputs                                                        |
+|---------------|----------------------------------------------------|------------------------------------------------|----------------------------------------------------------------| 
+|ToDoList.cs    |AddTask(string task)                                |add task to todo list                           |                                                                |
+|ToDoList.cs    |PrintToDoList()                                     |shows the whole todo list                       |string showing whole todolist                                   |
+|ToDoList.cs    |CompletedTasks()                                    |shows all the completed tasks                   |string showing all completed tasks                              |
+|ToDoList.cs    |UnCompletedTasks()                                  |shows all the uncompleted tasks                 |string showing all uncompleted tasks                            |
+|ToDoList.cs    |SearchForTask(string task)                          |looks for the searched task                     |returns the search task or a text with not found                |
+|ToDoList.cs    |SetAsCompleted(string task)                         |set task as completed                           |													               |
+|ToDoList.cs    |RemoveTask(string task)                             |task is not needed and can be removed           |bool that shows if it got removed or was not found		       |											         
+|ToDoList.cs    |SortAscending()                                     |sorts the list in alphabetic ascending order    |                                                                |
+|ToDoList.cs    |SortDescending()                                    |sorts the list in alphabetic descending order   |                                                                |
+|ToDoList.cs    |SetAsCompleted(string task)                         |you are done with one of the tasks              |                                                                |
+|ToDoList.cs    |Size()                                              |want to know the size of the todo list          |int that represents the size of the todo list                   |
 
 
+| Classes       | Methods/Properties                                 | Scenario                                       | Outputs                                                        |
+|---------------|----------------------------------------------------|------------------------------------------------|----------------------------------------------------------------| 
+|Extension.cs   |GetTaskByID(Guid id)                                |Have the ID and want to find the task           |task found by the ID                                            |
+|Extension.cs   |ChangeNameByID(Guid id, string name)                |misspelled the task name                        |                                                                |
+|Extension.cs   |ChangeStatusByID(Guid id)                           |Have the ID and want to change status           |                                                                |
+|Task.cs        |Property to store status                            |member to show                                  |bool showing the status                                         |
+|Task.cs        |Property to store task as string                    |member to show                                  |string showing the task                                         |
+|Task.cs        |Property to store the time when task was created    |member to show                                  |DateTime showing the time task was created                      |
+|Task.cs        |Property to store an unique ID for the task         |member to show                                  |GUID showing an unique ID for the task                          |
+|Task.cs        |ToString()                                          |shows a specific task                           |string showing the task, its status and the time it was created |
+
+ 
 
