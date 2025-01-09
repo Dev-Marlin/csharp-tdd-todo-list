@@ -19,11 +19,11 @@
 |ToDoList.cs    |UnCompletedTasks()                                  |shows all the uncompleted tasks                 |string showing all uncompleted tasks                      |
 |ToDoList.cs    |SearchForTask(string task)                          |looks for the searched task                     |returns the search task or a text with not found          |
 |ToDoList.cs    |SetAsCompleted(string task)                         |set task as completed                           |													         |
-|ToDoList.cs    |RemoveTask(string task)                             |task is not needed and can be removed           |bool that shows if it got removed or was not found													         |
+|ToDoList.cs    |RemoveTask(string task)                             |task is not needed and can be removed           |bool that shows if it got removed or was not found		 |											         |
 |ToDoList.cs    |SortAscending()                                     |sorts the list in alphabetic ascending order    |                                                          |
 |ToDoList.cs    |SortDescending()                                    |sorts the list in alphabetic descending order   |                                                          |
-|Task.cs        |Property to store status                            |member to show                                  |bool showing the status                                   |
-|Task.cs        |Property to store task as string                    |member to show                                  |string showing the task                                   |
-|Task.cs        |Equals(Task other)                                  |in search for a task they need to be comparable |bool showing if equal or not                              |
+|ToDoList.cs    |SetAsCompleted(string task)                         |you are done with one of the tasks              |                                                          |
+|ToDoList.cs    |Size()                                              |want to know the size of the todo list          | int that represents the size of the todo list            |
+
 
 
